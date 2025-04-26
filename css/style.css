@@ -128,6 +128,12 @@ a:focus {
   color: initial;
 }
 
+
+/* top Logo */
+.navbar_top_logo img{
+width: 6vw;
+}
+
 .btn,
 .btn:focus {
   outline: none !important;

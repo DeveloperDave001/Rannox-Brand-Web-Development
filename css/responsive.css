@@ -6,6 +6,9 @@
     .slider_section {
         padding: 50px 0;
     }
+    .navbar_top_logo img{
+        width: 6vw;
+        }
 
 }
 
@@ -13,6 +16,10 @@
     .user_option {
         flex-direction: column;
     }
+
+    .navbar_top_logo img{
+        width: 8vw;
+        }
 
     .custom_nav-container .nav_search-btn {
         background-position: center;
@@ -29,6 +36,9 @@
 }
 
 @media (max-width: 768px) {
+    .navbar_top_logo img{
+        width: 15vw;
+        }
 
     .info_section .col-md-3 {
         text-align: center;
@@ -79,9 +89,24 @@
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .navbar_top_logo img{
+        width: 20vw;
+        }
+
+}
 
 @media (max-width: 420px) {
+
+
+    .navbar_top_logo img{
+        width: 25vw;
+        border: rgb(0, 131, 120) dashed;
+        }
+
+
+
+
     .slider_section .detail-box h2 {
         font-size: 1.5rem;
     }
