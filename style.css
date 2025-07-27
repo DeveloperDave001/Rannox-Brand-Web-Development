@@ -1,0 +1,207 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --a-color:#111111;
+    --background-color:#111111;
+    --brand-color:#ccf400;
+    --normal-text-color:#ffffff;
+    --white:#ffffff;
+    --black:#111111;
+
+    /* Trandition */
+    --transition: .4s all;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    font-family: Poppins;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    font-family:poppins;
+    text-decoration: none;
+    color: var(--a-color) ;
+} 
+h1,h2{
+    font-weight: bolder;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Default Class */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* General Button */
+.general-padding{
+    padding: 0px 60px;
+}
+.general-Btn{
+    width: 200px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+
+}
+.general-Btn a{
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: var(--a-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.general-Btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+    scale: .95;
+}
+
+/* Navigation Menu for Desktop */
+
+.rannox-brand-nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.logo-box{
+    width: 80px;
+    height: 80%;
+}
+.logo-box img{
+    width: 60%;
+}
+.rannox-brand-nav ul{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.rannox-brand-nav ul li{
+    margin: 0px 10px;
+}
+.rannox-brand-nav ul li a{
+    padding: 0px 10px;
+    font-size: 14px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.rannox-brand-nav ul li a:hover{
+    border-bottom: 2px var(--a-color) solid;
+}
+
+/* Section 1 */
+.hero1{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.welcome-to-rannox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.welcome-to-rannox h1{
+    font-size: 20vw;
+    color: var(--brand-color);
+    margin-left: -1.2vw;
+    margin-top: -60px;
+    letter-spacing: -3px;
+
+}
+.welcome-to-rannox h2{
+    color: var(--normal-text-color);
+    font-size: 5vw;
+    letter-spacing: -2px;
+}
+.welcome-to-rannox p{
+   width: 50vw;
+   color: var(--normal-text-color);
+}
+.hero1::before{
+    position: absolute;
+    content: '';
+    opacity: 1;
+    bottom: -55px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: var(--brand-color);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    overflow: hidden;
+    box-shadow: var(--brand-color) 5px 40px 80px;
+}
+.hero1::after{
+    position: absolute;
+    content: '';
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: var(--white);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    overflow: hidden;
+    box-shadow: var(--brand-color) 5px 20px 80px;
+}
+.hero2{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--white);
+}
