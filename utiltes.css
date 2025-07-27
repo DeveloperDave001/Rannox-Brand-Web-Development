@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --a-color:#111111;
+    --background-color:#111111;
+    --brand-color:#ccf400;
+    --normal-text-color:#ffffff;
+    --white:#ffffff;
+    --black:#111111;
+    --gray:#a0a0a0;
+    --faded-brand-color:#cbf400ab;
+    --header-text-size:8vw;
+
+    /* Trandition */
+    --transition: .4s all;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    font-family: Poppins;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    font-family:poppins;
+    text-decoration: none;
+    color: var(--a-color) ;
+} 
+h1,h2{
+    font-weight: bolder;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Default Class */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.general-padding{
+    padding: 0px 60px;
+}
+.all-round-padding{
+    padding:30px 60px  ;
+}
+
+/* General Button */
+.general-Btn, .general-Btn-black{
+    width: 200px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+
+}
+.general-Btn-black{
+    background-color: var(--black);
+}
+.general-Btn a, .general-Btn-black a{
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: var(--a-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.general-Btn-black a{
+    color: var(--white);
+}
+.general-Btn:hover, .general-Btn-black:hover{
+    background-color: var(--white);
+    color: var(--black);
+    scale: .95;
+}
+.general-Btn-black a:hover{
+    color: var(--black);
+}
+.special-text1{
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline var(--brand-color);
+}
+.special-text{
+    font-weight: bolder;
+    color: var(--brand-color);
+}
